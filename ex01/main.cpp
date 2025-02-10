@@ -14,6 +14,22 @@
 
 int main()
 {
+    Zombie  *ptr_zombie;
+    Zombie  *tmp;
+    Zombie  *current;
 
+    ptr_zombie = zombieHorde(10, "Mick");
+    current = ptr_zombie;
+    while (current)
+    {
+        current->announce();
+        current = current->next;
+    }
+    while (ptr_zombie)
+    {
+        tmp = ptr_zombie->next;
+        delete ptr_zombie;
+        ptr_zombie = tmp;
+    }
     return (0);
 }

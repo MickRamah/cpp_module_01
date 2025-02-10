@@ -17,10 +17,20 @@
 
 class   Zombie
 {
+    private:
+        std::string name;
+
     public:
-        Zombie();
+        Zombie  *next;
+
+        Zombie(std::string str);
         Zombie(const Zombie& other_zombie);
-        Zombie& 
+        Zombie& operator=(const Zombie& other_zombie);
+        ~Zombie();
+
+        void    announce(void);
 };
+
+Zombie  *zombieHorde(int N, std::string name);
 
 #endif
