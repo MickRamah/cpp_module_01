@@ -6,7 +6,7 @@
 /*   By: zramahaz <zramahaz@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/22 12:19:30 by zramahaz          #+#    #+#             */
-/*   Updated: 2025/02/22 12:52:39 by zramahaz         ###   ########.fr       */
+/*   Updated: 2025/02/22 13:45:44 by zramahaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ class   Harl
 
     public:
         Harl();
-        Harl(const Harl& otherHarl);
-        Harl&    operator=(const Harl& otherHarl);
         ~Harl();
 
         void    complain(std::string level);
